@@ -745,6 +745,312 @@ const questions = [
       SAFE_DELAY: "Documentation alone delays care."
     }
   }
+},
+{
+  q: "A post-stroke patient suddenly coughs and has gurgling sounds during feeding. What is the nurse technician’s FIRST action?",
+  options: [
+    { text: "Stop feeding and place the patient upright", tag: "SCFHS" },
+    { text: "Suction the airway", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document aspiration signs", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping feeding and positioning reduces aspiration risk immediately.",
+    distractors: {
+      NCLEX: "Suction may be needed but after stopping feeding.",
+      STR: "Notification follows stabilization.",
+      SAFE_DELAY: "Documentation is delayed action."
+    }
+  }
+},
+{
+  q: "A patient receiving blood transfusion develops fever, chills, and flank pain. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stop the transfusion immediately", tag: "SCFHS" },
+    { text: "Administer prescribed antipyretic", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document transfusion reaction", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping the transfusion prevents further antigen exposure.",
+    distractors: {
+      NCLEX: "Medication does not stop the reaction source.",
+      STR: "Notification follows stopping transfusion.",
+      SAFE_DELAY: "Documentation delays lifesaving action."
+    }
+  }
+},
+{
+  q: "A patient with abdominal surgery reports severe pain and rigid abdomen. What should the nurse technician prioritize?",
+  options: [
+    { text: "Assess vital signs and report findings immediately", tag: "SCFHS" },
+    { text: "Administer prescribed analgesics", tag: "NCLEX" },
+    { text: "Encourage deep breathing", tag: "SAFE_DELAY" },
+    { text: "Document pain level", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rigid abdomen suggests peritonitis or bleeding requiring urgent assessment.",
+    distractors: {
+      NCLEX: "Pain medication may mask symptoms.",
+      SAFE_DELAY: "Breathing exercises are not priority.",
+      STR: "Documentation follows intervention."
+    }
+  }
+},
+{
+  q: "A patient with a urinary catheter reports lower abdominal discomfort and minimal urine output. What should the nurse technician check FIRST?",
+  options: [
+    { text: "Inspect the catheter tubing for kinks or obstruction", tag: "SCFHS" },
+    { text: "Encourage increased oral fluids", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document intake and output", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Mechanical obstruction is a common and immediate cause of retention.",
+    distractors: {
+      NCLEX: "Fluids do not fix obstruction.",
+      STR: "Notification follows troubleshooting.",
+      SAFE_DELAY: "Documentation delays correction."
+    }
+  }
+},
+{
+  q: "A patient with liver cirrhosis becomes confused and has asterixis. What is the nurse technician’s PRIORITY?",
+  options: [
+    { text: "Ensure patient safety and prevent falls", tag: "SCFHS" },
+    { text: "Administer prescribed lactulose", tag: "NCLEX" },
+    { text: "Restrict dietary protein", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hepatic encephalopathy increases injury risk; safety is first.",
+    distractors: {
+      NCLEX: "Medication acts over time.",
+      SAFE_DELAY: "Diet changes are not immediate.",
+      STR: "Escalation follows stabilization."
+    }
+  }
+},
+{
+  q: "A patient on anticoagulant therapy reports black, tarry stools. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assess vital signs and signs of bleeding", tag: "SCFHS" },
+    { text: "Hold the next anticoagulant dose", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document stool characteristics", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Assessment determines severity and hemodynamic stability.",
+    distractors: {
+      NCLEX: "Holding medication requires order.",
+      STR: "Notification follows assessment.",
+      SAFE_DELAY: "Documentation delays care."
+    }
+  }
+},
+{
+  q: "A patient with pneumonia suddenly becomes cyanotic and restless. What is the nurse technician’s FIRST action?",
+  options: [
+    { text: "Apply oxygen and assess airway patency", tag: "SCFHS" },
+    { text: "Encourage coughing and deep breathing", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document respiratory changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypoxia requires immediate airway and oxygen support.",
+    distractors: {
+      NCLEX: "Exercises are secondary.",
+      STR: "Notification follows stabilization.",
+      SAFE_DELAY: "Documentation is delayed action."
+    }
+  }
+},
+{
+  q: "A patient with bowel obstruction develops severe vomiting and abdominal distention. What should the nurse technician prioritize?",
+  options: [
+    { text: "Maintain NPO status and monitor airway", tag: "SCFHS" },
+    { text: "Administer prescribed antiemetic", tag: "NCLEX" },
+    { text: "Encourage oral fluids", tag: "SAFE_DELAY" },
+    { text: "Document gastrointestinal findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "NPO and airway protection reduce aspiration risk.",
+    distractors: {
+      NCLEX: "Medication is not first.",
+      SAFE_DELAY: "Oral intake worsens obstruction.",
+      STR: "Documentation follows intervention."
+    }
+  }
+},
+{
+  q: "A patient with burns develops sudden hypotension and tachycardia. What is the nurse technician’s FIRST concern?",
+  options: [
+    { text: "Assess for hypovolemia and shock", tag: "SCFHS" },
+    { text: "Administer prescribed analgesics", tag: "NCLEX" },
+    { text: "Reassess burn dressing", tag: "SAFE_DELAY" },
+    { text: "Document vital sign changes", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Burn patients are at high risk for fluid loss and shock.",
+    distractors: {
+      NCLEX: "Pain control is secondary.",
+      SAFE_DELAY: "Dressing check is not priority.",
+      STR: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A patient receiving tube feeding develops diarrhea and abdominal cramping. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Check feeding rate and formula temperature", tag: "SCFHS" },
+    { text: "Administer antidiarrheal medication", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document bowel changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid or cold feeding commonly causes intolerance.",
+    distractors: {
+      NCLEX: "Medication is not first-line.",
+      STR: "Notification follows assessment.",
+      SAFE_DELAY: "Documentation delays correction."
+    }
+  }
+},
+{
+  q: "A patient with spinal cord injury reports sudden severe headache and flushed face. BP is 190/110. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Sit the patient upright and loosen tight clothing", tag: "SCFHS" },
+    { text: "Administer prescribed antihypertensive", tag: "NCLEX" },
+    { text: "Check bladder for distention later", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Autonomic dysreflexia requires immediate BP reduction via positioning.",
+    distractors: {
+      NCLEX: "Medication requires order.",
+      SAFE_DELAY: "Delayed trigger removal is unsafe.",
+      STR: "Notification follows initial intervention."
+    }
+  }
+},
+{
+  q: "A patient with GI bleed becomes pale, dizzy, and hypotensive. What is the nurse technician’s PRIORITY action?",
+  options: [
+    { text: "Place the patient supine and assess vital signs", tag: "SCFHS" },
+    { text: "Encourage oral fluids", tag: "NCLEX" },
+    { text: "Document signs of bleeding", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Positioning and assessment support circulation and identify shock.",
+    distractors: {
+      NCLEX: "Oral fluids may be contraindicated.",
+      SAFE_DELAY: "Documentation delays care.",
+      STR: "Notification follows stabilization."
+    }
+  }
+},
+{
+  q: "A patient with chronic kidney disease reports muscle weakness and palpitations. Telemetry shows peaked T waves. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Place the patient on continuous cardiac monitoring", tag: "SCFHS" },
+    { text: "Encourage oral fluid intake", tag: "NCLEX" },
+    { text: "Prepare to administer sodium polystyrene sulfonate", tag: "STR" },
+    { text: "Document ECG changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperkalemia can cause lethal arrhythmias; immediate cardiac monitoring is critical.",
+    distractors: {
+      NCLEX: "Fluids do not rapidly correct potassium levels.",
+      STR: "Medication preparation follows stabilization.",
+      SAFE_DELAY: "Documentation delays lifesaving intervention."
+    }
+  }
+},
+{
+  q: "A patient with diabetes reports sweating, tremors, and confusion. Capillary glucose is 52 mg/dL. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Administer fast-acting oral glucose", tag: "SCFHS" },
+    { text: "Recheck blood glucose in 15 minutes", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document hypoglycemia", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate glucose replacement prevents neurological injury.",
+    distractors: {
+      SAFE_DELAY: "Rechecking delays treatment.",
+      STR: "Notification follows correction.",
+      NCLEX: "Documentation does not treat hypoglycemia."
+    }
+  }
+},
+{
+  q: "A postoperative patient suddenly reports chest pain and shortness of breath. Oxygen saturation drops to 86%. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Apply supplemental oxygen and assess airway", tag: "SCFHS" },
+    { text: "Encourage use of incentive spirometer", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document respiratory changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute hypoxia requires immediate oxygenation and airway assessment.",
+    distractors: {
+      NCLEX: "Spirometry is not appropriate during acute distress.",
+      STR: "Escalation follows stabilization.",
+      SAFE_DELAY: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A patient with sepsis becomes increasingly confused and urine output drops to 15 mL/hr. What should the nurse technician prioritize?",
+  options: [
+    { text: "Assess perfusion and report findings immediately", tag: "SCFHS" },
+    { text: "Encourage oral fluid intake", tag: "NCLEX" },
+    { text: "Document intake and output", tag: "SAFE_DELAY" },
+    { text: "Reassure the patient", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Reduced urine output and altered mentation indicate worsening perfusion.",
+    distractors: {
+      NCLEX: "Oral intake may be unsafe.",
+      SAFE_DELAY: "Documentation alone delays escalation.",
+      STR: "Reassurance does not address shock."
+    }
+  }
+},
+{
+  q: "A patient receiving opioid analgesics becomes difficult to arouse and has a respiratory rate of 8/min. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stimulate the patient and assess airway and breathing", tag: "SCFHS" },
+    { text: "Prepare naloxone for administration", tag: "NCLEX" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document decreased respirations", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate airway and breathing assessment prevents respiratory arrest.",
+    distractors: {
+      NCLEX: "Medication preparation follows assessment.",
+      STR: "Notification follows stabilization.",
+      SAFE_DELAY: "Documentation delays life-saving action."
+    }
+  }
 }
 ];
 
