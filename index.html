@@ -1519,6 +1519,546 @@ const questions = [
       SAFE_DELAY: "Documentation does not reduce risk."
     }
   }
+},
+{
+  q: "A patient with chronic obstructive pulmonary disease suddenly becomes anxious with labored breathing and use of accessory muscles. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assist the patient to an upright position and apply prescribed oxygen", tag: "SCFHS" },
+    { text: "Encourage pursed-lip breathing only", tag: "NCLEX" },
+    { text: "Notify the nurse of respiratory distress", tag: "STR" },
+    { text: "Document respiratory rate and effort", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Positioning and oxygenation reduce work of breathing and hypoxia.",
+    distractors: {
+      NCLEX: "Breathing techniques alone may be insufficient.",
+      STR: "Escalation follows immediate intervention.",
+      SAFE_DELAY: "Documentation delays care."
+    }
+  }
+},
+{
+  q: "A patient with suspected bowel perforation develops rigid abdomen and severe pain. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Keep the patient NPO and report findings urgently", tag: "SCFHS" },
+    { text: "Apply heat to the abdomen", tag: "SAFE_DELAY" },
+    { text: "Administer prescribed analgesics", tag: "NCLEX" },
+    { text: "Document abdominal assessment", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Peritonitis risk requires immediate bowel rest and escalation.",
+    distractors: {
+      SAFE_DELAY: "Heat may worsen inflammation.",
+      NCLEX: "Pain relief alone delays treatment.",
+      STR: "Documentation should not delay reporting."
+    }
+  }
+},
+{
+  q: "A patient with myocardial infarction reports increasing chest pain unrelieved by rest. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stop activity and assist the patient to a resting position while assessing airway and breathing", tag: "SCFHS" },
+    { text: "Administer prescribed PRN analgesics", tag: "NCLEX" },
+    { text: "Notify the healthcare provider immediately", tag: "STR" },
+    { text: "Document pain intensity and duration", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate rest and assessment reduce myocardial oxygen demand and prevent deterioration.",
+    distractors: {
+      NCLEX: "Medication follows initial stabilization.",
+      STR: "Notification should not delay immediate safety measures.",
+      SAFE_DELAY: "Documentation does not reduce ischemia."
+    }
+  }
+},
+{
+  q: "A patient with acute kidney injury has a sudden decrease in urine output to 10 mL/hr. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assess catheter patency and intake/output accuracy", tag: "SCFHS" },
+    { text: "Encourage increased oral fluid intake", tag: "SAFE_DELAY" },
+    { text: "Notify the nurse of oliguria", tag: "STR" },
+    { text: "Document urine output changes", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Mechanical causes must be ruled out immediately to prevent further renal compromise.",
+    distractors: {
+      SAFE_DELAY: "Fluids may be contraindicated.",
+      STR: "Escalation follows immediate assessment.",
+      NCLEX: "Documentation delays correction."
+    }
+  }
+},
+{
+  q: "A patient with a history of seizures becomes suddenly unresponsive and begins tonic-clonic movements. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Protect the patient from injury and maintain airway patency", tag: "SCFHS" },
+    { text: "Insert an oral airway", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document seizure activity", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Safety and airway protection are the highest priorities during active seizure.",
+    distractors: {
+      SAFE_DELAY: "Oral airway insertion risks injury.",
+      STR: "Notification follows immediate protection.",
+      NCLEX: "Documentation delays lifesaving action."
+    }
+  }
+},
+{
+  q: "A patient with pneumonia suddenly develops worsening hypoxia despite oxygen therapy. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assess airway patency and breathing effectiveness", tag: "SCFHS" },
+    { text: "Increase oxygen flow rate independently", tag: "SAFE_DELAY" },
+    { text: "Notify the nurse of deterioration", tag: "STR" },
+    { text: "Document oxygen saturation changes", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate assessment identifies causes of acute respiratory failure.",
+    distractors: {
+      SAFE_DELAY: "Increasing oxygen without assessment may be unsafe.",
+      STR: "Escalation should not delay assessment.",
+      NCLEX: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A patient with gastrointestinal bleeding suddenly passes a large amount of bright red blood per rectum and becomes hypotensive. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Position the patient supine and assess airway and circulation", tag: "SCFHS" },
+    { text: "Obtain stool sample for testing", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" },
+    { text: "Document amount of bleeding", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Acute hemorrhage requires immediate support of airway and circulation.",
+    distractors: {
+      SAFE_DELAY: "Testing delays stabilization.",
+      STR: "Notification follows immediate intervention.",
+      NCLEX: "Documentation delays lifesaving care."
+    }
+  }
+},
+{
+  q: "A patient receiving total parenteral nutrition develops fever and chills during infusion. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stop the infusion and report suspected infection", tag: "SCFHS" },
+    { text: "Change the infusion tubing", tag: "NCLEX" },
+    { text: "Monitor vital signs closely", tag: "SAFE_DELAY" },
+    { text: "Document temperature elevation", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Suspected catheter-related bloodstream infection requires immediate cessation and escalation.",
+    distractors: {
+      NCLEX: "Tubing change alone does not address infection.",
+      SAFE_DELAY: "Monitoring delays definitive action.",
+      STR: "Documentation follows intervention."
+    }
+  }
+},
+{
+  q: "A patient with advanced heart failure becomes suddenly confused and restless with cool extremities. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assess vital signs and oxygenation status immediately", tag: "SCFHS" },
+    { text: "Encourage the patient to rest quietly", tag: "SAFE_DELAY" },
+    { text: "Notify the nurse of mental status changes", tag: "STR" },
+    { text: "Document neurological findings", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Confusion and restlessness indicate poor perfusion requiring immediate assessment.",
+    distractors: {
+      SAFE_DELAY: "Rest alone does not address hypoperfusion.",
+      STR: "Escalation follows rapid assessment.",
+      NCLEX: "Documentation delays care."
+    }
+  }
+},
+{
+  q: "A patient with severe electrolyte imbalance suddenly develops irregular heart rhythm on the monitor and reports dizziness. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assess airway, breathing, circulation, and monitor vital signs", tag: "SCFHS" },
+    { text: "Prepare prescribed electrolyte replacement", tag: "NCLEX" },
+    { text: "Notify the healthcare provider immediately", tag: "STR" },
+    { text: "Document cardiac rhythm changes", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cardiac instability requires immediate assessment of perfusion and hemodynamic status before intervention.",
+    distractors: {
+      NCLEX: "Medication follows stabilization.",
+      STR: "Notification should not delay immediate assessment.",
+      SAFE_DELAY: "Documentation delays lifesaving action."
+    }
+  }
+},
+{
+  q: "A patient with advanced cancer suddenly becomes acutely dyspneic, anxious, and cyanotic. Oxygen saturation is rapidly falling. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Apply oxygen and assess airway patency and breathing", tag: "SCFHS" },
+    { text: "Reposition the patient for comfort only", tag: "SAFE_DELAY" },
+    { text: "Notify the nurse of respiratory distress", tag: "STR" },
+    { text: "Document changes in respiratory status", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Severe hypoxia requires immediate airway and oxygen support to prevent respiratory failure.",
+    distractors: {
+      SAFE_DELAY: "Comfort measures alone are insufficient.",
+      STR: "Escalation follows immediate intervention.",
+      NCLEX: "Documentation delays urgent care."
+    }
+  }
+},
+{
+  q: "An ICU patient suddenly becomes unresponsive. The monitor shows ventricular fibrillation. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Initiate CPR and activate the emergency response system", tag: "SCFHS" },
+    { text: "Prepare the defibrillator for shock delivery", tag: "NCLEX" },
+    { text: "Notify the physician immediately", tag: "STR" },
+    { text: "Document the cardiac rhythm change", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate CPR maintains circulation until defibrillation can occur.",
+    distractors: {
+      NCLEX: "Defibrillation preparation follows CPR initiation.",
+      STR: "Notification must not delay resuscitation.",
+      SAFE_DELAY: "Documentation delays lifesaving action."
+    }
+  }
+},
+{
+  q: "A mechanically ventilated patient suddenly has no chest rise and oxygen saturation drops rapidly. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Disconnect the ventilator and manually ventilate with a bag-valve mask", tag: "SCFHS" },
+    { text: "Increase oxygen concentration on the ventilator", tag: "SAFE_DELAY" },
+    { text: "Notify respiratory therapy", tag: "STR" },
+    { text: "Document ventilator malfunction", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Manual ventilation ensures immediate oxygen delivery when ventilator failure is suspected.",
+    distractors: {
+      SAFE_DELAY: "Oxygen adjustment does not resolve ventilator failure.",
+      STR: "Escalation follows restoration of ventilation.",
+      NCLEX: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A trauma patient develops hypotension, jugular vein distention, and muffled heart sounds. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Support airway and circulation and report suspected cardiac tamponade immediately", tag: "SCFHS" },
+    { text: "Prepare the patient for imaging studies", tag: "NCLEX" },
+    { text: "Administer IV fluids as prescribed", tag: "STR" },
+    { text: "Document assessment findings", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Beck’s triad indicates life-threatening tamponade requiring immediate stabilization and escalation.",
+    distractors: {
+      NCLEX: "Imaging delays emergency intervention.",
+      STR: "Fluids may be ordered but follow rapid reporting.",
+      SAFE_DELAY: "Documentation delays care."
+    }
+  }
+},
+{
+  q: "An ICU patient suddenly becomes unresponsive. The monitor shows ventricular fibrillation. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Initiate CPR and activate the emergency response system", tag: "SCFHS" },
+    { text: "Prepare the defibrillator for shock delivery", tag: "NCLEX" },
+    { text: "Notify the physician immediately", tag: "STR" },
+    { text: "Document the cardiac rhythm change", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate CPR maintains circulation until defibrillation can occur.",
+    distractors: {
+      NCLEX: "Defibrillation preparation follows CPR initiation.",
+      STR: "Notification must not delay resuscitation.",
+      SAFE_DELAY: "Documentation delays lifesaving action."
+    }
+  }
+},
+{
+  q: "A mechanically ventilated patient suddenly has no chest rise and oxygen saturation drops rapidly. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Disconnect the ventilator and manually ventilate with a bag-valve mask", tag: "SCFHS" },
+    { text: "Increase oxygen concentration on the ventilator", tag: "SAFE_DELAY" },
+    { text: "Notify respiratory therapy", tag: "STR" },
+    { text: "Document ventilator malfunction", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Manual ventilation ensures immediate oxygen delivery when ventilator failure is suspected.",
+    distractors: {
+      SAFE_DELAY: "Oxygen adjustment does not resolve ventilator failure.",
+      STR: "Escalation follows restoration of ventilation.",
+      NCLEX: "Documentation delays intervention."
+    }
+  }
+},
+{
+  q: "A trauma patient develops hypotension, jugular vein distention, and muffled heart sounds. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Support airway and circulation and report suspected cardiac tamponade immediately", tag: "SCFHS" },
+    { text: "Prepare the patient for imaging studies", tag: "NCLEX" },
+    { text: "Administer IV fluids as prescribed", tag: "STR" },
+    { text: "Document assessment findings", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Beck’s triad indicates life-threatening tamponade requiring immediate stabilization and escalation.",
+    distractors: {
+      NCLEX: "Imaging delays emergency intervention.",
+      STR: "Fluids may be ordered but follow rapid reporting.",
+      SAFE_DELAY: "Documentation delays care."
+    }
+  }
+},
+{
+  q: "A ventilated ICU patient suddenly develops high peak airway pressures, absent breath sounds on the right, and tracheal deviation. SpO₂ drops to 82%. What is the FIRST action by the nurse technician?",
+  options: [
+    { text: "Prepare for immediate needle decompression", tag: "SCFHS" },
+    { text: "Increase FiO₂ to 100%", tag: "NCLEX" },
+    { text: "Suction the endotracheal tube", tag: "SAFE_DELAY" },
+    { text: "Notify the physician STAT", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Findings indicate tension pneumothorax requiring immediate decompression to prevent cardiac arrest.",
+    distractors: {
+      NCLEX: "Oxygen does not correct obstructive shock.",
+      SAFE_DELAY: "Suction delays life-saving intervention.",
+      STR: "Action precedes notification in emergencies."
+    }
+  }
+},
+{
+  q: "A patient with septic shock has MAP 58 mmHg despite fluids. Norepinephrine infusion is ordered. What must be verified FIRST before initiation?",
+  options: [
+    { text: "Patency of central or large-bore IV access", tag: "SCFHS" },
+    { text: "Baseline urine output", tag: "NCLEX" },
+    { text: "Serum lactate level", tag: "SAFE_DELAY" },
+    { text: "Blood culture results", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Vasopressors require reliable access to prevent tissue necrosis from extravasation.",
+    distractors: {
+      NCLEX: "Urine output monitoring follows stabilization.",
+      SAFE_DELAY: "Lab values do not delay pressor initiation.",
+      STR: "Cultures should not delay hemodynamic support."
+    }
+  }
+},
+{
+  q: "During rapid sequence intubation, a patient becomes bradycardic and hypotensive immediately after induction. What is the MOST likely cause?",
+  options: [
+    { text: "Vagal response to hypoxia", tag: "SCFHS" },
+    { text: "Allergic reaction to sedative", tag: "NCLEX" },
+    { text: "Acute renal failure", tag: "SAFE_DELAY" },
+    { text: "Aspiration of gastric contents", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypoxia during intubation commonly triggers vagal-mediated bradycardia.",
+    distractors: {
+      NCLEX: "Anaphylaxis presents with bronchospasm and rash.",
+      SAFE_DELAY: "Renal failure does not cause acute peri-intubation collapse.",
+      STR: "Aspiration does not cause immediate bradycardia."
+    }
+  }
+},
+{
+  q: "A trauma patient arrives hypotensive with distended neck veins and muffled heart sounds. What condition is suspected?",
+  options: [
+    { text: "Cardiac tamponade", tag: "SCFHS" },
+    { text: "Massive pulmonary embolism", tag: "NCLEX" },
+    { text: "Tension pneumothorax", tag: "SAFE_DELAY" },
+    { text: "Hypovolemic shock", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Beck’s triad indicates cardiac tamponade requiring emergent intervention.",
+    distractors: {
+      NCLEX: "PE presents with sudden dyspnea and chest pain.",
+      SAFE_DELAY: "Pneumothorax causes unilateral breath sound loss.",
+      STR: "Hypovolemia causes flat neck veins."
+    }
+  }
+},
+{
+  q: "A patient on continuous ECG monitoring develops polymorphic VT with loss of pulse. What is the PRIORITY intervention?",
+  options: [
+    { text: "Immediate defibrillation", tag: "SCFHS" },
+    { text: "Administer amiodarone IV", tag: "NCLEX" },
+    { text: "Start chest compressions only", tag: "SAFE_DELAY" },
+    { text: "Check electrolyte levels", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Pulseless VT requires immediate unsynchronized shock.",
+    distractors: {
+      NCLEX: "Antiarrhythmics follow defibrillation.",
+      SAFE_DELAY: "CPR alone is insufficient when defibrillation is available.",
+      STR: "Labs do not precede life-saving shock."
+    }
+  }
+},
+{
+  q: "An intubated patient becomes agitated, biting the tube, with rising CO₂ levels. What is the BEST immediate nursing action?",
+  options: [
+    { text: "Ensure airway patency and apply sedation as ordered", tag: "SCFHS" },
+    { text: "Restrain the patient physically", tag: "NCLEX" },
+    { text: "Lower ventilator tidal volume", tag: "SAFE_DELAY" },
+    { text: "Notify respiratory therapy", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Protecting the airway and correcting ventilator asynchrony prevents hypoventilation.",
+    distractors: {
+      NCLEX: "Restraints without addressing cause worsen hypoxia.",
+      SAFE_DELAY: "Ventilator changes do not correct obstruction.",
+      STR: "Action precedes consultation."
+    }
+  }
+},
+{
+  q: "A massive transfusion protocol is initiated. Which complication must be monitored MOST closely?",
+  options: [
+    { text: "Hypocalcemia", tag: "SCFHS" },
+    { text: "Hypernatremia", tag: "NCLEX" },
+    { text: "Metabolic alkalosis", tag: "SAFE_DELAY" },
+    { text: "Hyperglycemia", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Citrate in blood products binds calcium causing hypocalcemia.",
+    distractors: {
+      NCLEX: "Sodium imbalance is not primary.",
+      SAFE_DELAY: "Acidosis is more common than alkalosis.",
+      STR: "Glucose changes are secondary."
+    }
+  }
+},
+{
+  q: "A ventilated ARDS patient suddenly desaturates when turned supine. What intervention is MOST effective?",
+  options: [
+    { text: "Reposition to prone position", tag: "SCFHS" },
+    { text: "Increase PEEP immediately", tag: "NCLEX" },
+    { text: "Administer bronchodilators", tag: "SAFE_DELAY" },
+    { text: "Decrease tidal volume", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Prone positioning improves ventilation-perfusion matching in ARDS.",
+    distractors: {
+      NCLEX: "PEEP adjustment alone may not correct shunt.",
+      SAFE_DELAY: "Bronchodilators do not treat alveolar collapse.",
+      STR: "Tidal volume reduction does not address oxygenation."
+    }
+  }
+},
+{
+  q: "During CPR, end-tidal CO₂ suddenly drops from 20 to 8 mmHg. What does this indicate?",
+  options: [
+    { text: "Inadequate chest compressions", tag: "SCFHS" },
+    { text: "Return of spontaneous circulation", tag: "NCLEX" },
+    { text: "Improved ventilation", tag: "SAFE_DELAY" },
+    { text: "Equipment malfunction only", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Low ETCO₂ reflects poor cardiac output from ineffective compressions.",
+    distractors: {
+      NCLEX: "ROSC causes sudden ETCO₂ increase.",
+      SAFE_DELAY: "Ventilation does not drop ETCO₂ this way.",
+      STR: "Clinical correlation is required."
+    }
+  }
+},
+{
+  q: "A patient with intracranial hemorrhage suddenly has unequal pupils and hypertension with bradycardia. What is occurring?",
+  options: [
+    { text: "Increased intracranial pressure with herniation", tag: "SCFHS" },
+    { text: "Hypovolemic shock", tag: "NCLEX" },
+    { text: "Septic encephalopathy", tag: "SAFE_DELAY" },
+    { text: "Medication overdose", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cushing’s triad indicates impending brain herniation.",
+    distractors: {
+      NCLEX: "Shock causes hypotension.",
+      SAFE_DELAY: "Sepsis does not cause pupillary asymmetry.",
+      STR: "Overdose lacks classic triad."
+    }
+  }
+},
+{
+  q: "An ICU patient on mechanical ventilation suddenly alarms for low pressure. The nurse technician notes the patient is coughing and air is escaping from the mouth. What is the FIRST action?",
+  options: [
+    { text: "Check the endotracheal tube cuff and connections", tag: "SCFHS" },
+    { text: "Increase ventilator tidal volume", tag: "NCLEX" },
+    { text: "Silence the alarm and reassess later", tag: "SAFE_DELAY" },
+    { text: "Notify respiratory therapy immediately", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Low-pressure alarms with air leak indicate cuff or circuit disconnection requiring immediate airway assessment.",
+    distractors: {
+      NCLEX: "Ventilator adjustments do not correct leaks.",
+      SAFE_DELAY: "Alarm silencing delays airway safety.",
+      STR: "Immediate assessment precedes notification."
+    }
+  }
+},
+{
+  q: "A post–cardiac arrest patient is undergoing targeted temperature management. Which finding requires IMMEDIATE intervention?",
+  options: [
+    { text: "Ventricular dysrhythmias on ECG", tag: "SCFHS" },
+    { text: "Shivering during cooling", tag: "NCLEX" },
+    { text: "Decreased urine output", tag: "SAFE_DELAY" },
+    { text: "Mild metabolic acidosis", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypothermia increases risk of lethal dysrhythmias that require prompt treatment.",
+    distractors: {
+      NCLEX: "Shivering is expected and managed with sedation.",
+      SAFE_DELAY: "Renal changes are monitored over time.",
+      STR: "Mild acidosis is common post-arrest."
+    }
+  }
+},
+{
+  q: "A patient with severe head injury suddenly becomes restless, with decreasing level of consciousness and vomiting. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Maintain airway and prepare for suctioning", tag: "SCFHS" },
+    { text: "Administer antiemetic medication", tag: "NCLEX" },
+    { text: "Reorient the patient verbally", tag: "SAFE_DELAY" },
+    { text: "Document neurological changes", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway protection is the priority due to aspiration risk and rising intracranial pressure.",
+    distractors: {
+      NCLEX: "Medications do not precede airway protection.",
+      SAFE_DELAY: "Reorientation does not address deterioration.",
+      STR: "Documentation follows stabilization."
+    }
+  }
 }
 ];
 
