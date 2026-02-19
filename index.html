@@ -151,6 +151,204 @@ const questions = [
       STR: "Ending assessment is unsafe."
     }
   }
+},
+{
+  q: "An elderly patient becomes dizzy when moved from lying to standing position. BP drops from 130/78 to 96/60. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assist the patient back to a sitting position", tag: "SCFHS" },
+    { text: "Encourage oral fluid intake", tag: "NCLEX" },
+    { text: "Document orthostatic hypotension", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate positioning prevents falls and injury caused by acute postural hypotension.",
+    distractors: {
+      NCLEX: "Hydration does not resolve immediate instability.",
+      SAFE_DELAY: "Documentation does not protect patient safety.",
+      STR: "Escalation follows stabilization."
+    }
+  }
+},
+{
+  q: "A postoperative patient reports pain rated 8/10. Vital signs are stable. What is the nurse technician’s PRIORITY action?",
+  options: [
+    { text: "Assess pain characteristics using a pain scale", tag: "SCFHS" },
+    { text: "Administer prescribed analgesic", tag: "NCLEX" },
+    { text: "Notify the nurse in charge", tag: "STR" },
+    { text: "Document the pain score", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Assessment is required before intervention to guide appropriate pain management.",
+    distractors: {
+      NCLEX: "Medication administration requires prior assessment.",
+      STR: "Reporting without assessment limits clinical accuracy.",
+      SAFE_DELAY: "Documentation does not relieve pain."
+    }
+  }
+},
+{
+  q: "A bedridden patient has non-blanchable redness over the sacrum. Skin is intact. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Reposition the patient and offload pressure", tag: "SCFHS" },
+    { text: "Apply moisturizing lotion", tag: "NCLEX" },
+    { text: "Document a pressure injury", tag: "SAFE_DELAY" },
+    { text: "Notify the healthcare provider", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Pressure relief addresses the underlying cause and prevents skin breakdown.",
+    distractors: {
+      NCLEX: "Topical care does not relieve pressure.",
+      SAFE_DELAY: "Documentation does not prevent deterioration.",
+      STR: "Provider notification is not immediately required."
+    }
+  }
+},
+{
+  q: "A patient receiving tube feeding begins coughing and gagging. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stop the feeding and elevate the head of the bed", tag: "SCFHS" },
+    { text: "Check tube placement", tag: "NCLEX" },
+    { text: "Notify the nurse immediately", tag: "STR" },
+    { text: "Document suspected aspiration", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping the feeding and positioning protects the airway and reduces aspiration risk.",
+    distractors: {
+      NCLEX: "Assessment follows airway protection.",
+      STR: "Escalation should not delay safety action.",
+      SAFE_DELAY: "Documentation does not prevent harm."
+    }
+  }
+},
+{
+  q: "A patient attempts to get out of bed unassisted despite fall precautions. What is the nurse technician’s FIRST action?",
+  options: [
+    { text: "Stay with the patient and assist safely", tag: "SCFHS" },
+    { text: "Activate the bed alarm", tag: "NCLEX" },
+    { text: "Notify the nurse in charge", tag: "STR" },
+    { text: "Document noncompliance", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate supervision prevents falls and injury.",
+    distractors: {
+      NCLEX: "Alarms do not replace direct supervision.",
+      STR: "Reporting is secondary to patient safety.",
+      SAFE_DELAY: "Documentation does not prevent injury."
+    }
+  }
+},
+{
+  q: "A patient becomes short of breath after ambulation. SpO₂ is 90% on room air. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assist the patient to rest and elevate the head of the bed", tag: "SCFHS" },
+    { text: "Apply supplemental oxygen", tag: "NCLEX" },
+    { text: "Notify the nurse immediately", tag: "STR" },
+    { text: "Document oxygen saturation", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Positioning reduces work of breathing and improves ventilation.",
+    distractors: {
+      NCLEX: "Oxygen may be required but follows positioning.",
+      STR: "Escalation should not delay basic care.",
+      SAFE_DELAY: "Documentation does not relieve distress."
+    }
+  }
+},
+{
+  q: "A patient with limited mobility has not voided for 8 hours. Abdomen is slightly distended. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Assist the patient to the bathroom or commode", tag: "SCFHS" },
+    { text: "Measure bladder volume with scanner", tag: "NCLEX" },
+    { text: "Notify the nurse of urinary retention", tag: "STR" },
+    { text: "Document decreased urine output", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Assisting with elimination may resolve retention without invasive measures.",
+    distractors: {
+      NCLEX: "Assessment follows basic intervention.",
+      STR: "Reporting follows initial action.",
+      SAFE_DELAY: "Documentation does not address retention."
+    }
+  }
+},
+{
+  q: "A patient with a peripheral IV reports pain and swelling at the site. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stop the infusion and secure the IV site", tag: "SCFHS" },
+    { text: "Apply warm compress", tag: "NCLEX" },
+    { text: "Notify the nurse immediately", tag: "STR" },
+    { text: "Document possible infiltration", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Stopping the infusion prevents tissue injury from infiltration.",
+    distractors: {
+      NCLEX: "Compresses are applied after stopping infusion.",
+      STR: "Escalation follows immediate safety action.",
+      SAFE_DELAY: "Documentation does not prevent injury."
+    }
+  }
+},
+{
+  q: "A patient is scheduled for a bath but appears fatigued after therapy. What is the MOST appropriate action?",
+  options: [
+    { text: "Offer rest and reschedule hygiene care", tag: "SCFHS" },
+    { text: "Proceed with the scheduled bath", tag: "SAFE_DELAY" },
+    { text: "Notify the nurse of refusal", tag: "STR" },
+    { text: "Document missed hygiene care", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Respecting patient tolerance prevents exhaustion and promotes recovery.",
+    distractors: {
+      SAFE_DELAY: "Forcing care increases fatigue.",
+      STR: "Escalation is unnecessary.",
+      NCLEX: "Documentation follows care decisions."
+    }
+  }
+},
+{
+  q: "A patient with diarrhea requires frequent linen changes. What is the PRIORITY nursing concern?",
+  options: [
+    { text: "Prevent skin breakdown", tag: "SCFHS" },
+    { text: "Maintain accurate intake and output", tag: "NCLEX" },
+    { text: "Notify the nurse of frequent stools", tag: "STR" },
+    { text: "Document stool frequency", tag: "SAFE_DELAY" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Moisture exposure places the patient at high risk for skin injury.",
+    distractors: {
+      NCLEX: "Fluid balance is important but secondary.",
+      STR: "Reporting follows preventive care.",
+      SAFE_DELAY: "Documentation does not prevent injury."
+    }
+  }
+},
+{
+  q: "A patient receiving oxygen via nasal cannula complains of nasal dryness. What should the nurse technician do?",
+  options: [
+    { text: "Apply water-based lubricant to the nares", tag: "SCFHS" },
+    { text: "Increase oxygen flow rate", tag: "SAFE_DELAY" },
+    { text: "Notify the nurse of discomfort", tag: "STR" },
+    { text: "Remove oxygen briefly", tag: "NCLEX" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Lubrication prevents mucosal irritation without interrupting therapy.",
+    distractors: {
+      SAFE_DELAY: "Increasing flow worsens dryness.",
+      STR: "Discomfort can be managed independently.",
+      NCLEX: "Removing oxygen compromises oxygenation."
+    }
+  }
 }
 ];
 
