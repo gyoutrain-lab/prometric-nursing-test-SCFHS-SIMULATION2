@@ -77,7 +77,7 @@ input, button {
 <!-- EXAM SCREEN -->
 <div id="examScreen" class="hidden">
   <h2 id="qCounter"></h2>
-  <div id="timer">Time Remaining: 20:00</div>
+  <div id="timer">Time Remaining: 120:00</div>
   <p id="questionText"></p>
   <div id="options"></div>
 
@@ -2059,6 +2059,512 @@ const questions = [
       STR: "Documentation follows stabilization."
     }
   }
+},
+{
+  q: "During emergency intubation, the patient’s oxygen saturation rapidly drops despite bag-mask ventilation. What is the MOST likely cause?",
+  options: [
+    { text: "Poor mask seal or airway obstruction", tag: "SCFHS" },
+    { text: "Acute kidney injury", tag: "NCLEX" },
+    { text: "Delayed medication onset", tag: "SAFE_DELAY" },
+    { text: "Fluid overload", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Inadequate ventilation from poor seal or obstruction is the most common cause of rapid desaturation.",
+    distractors: {
+      NCLEX: "Renal issues do not cause acute desaturation.",
+      SAFE_DELAY: "Medication timing is not the primary issue.",
+      STR: "Fluid overload develops gradually."
+    }
+  }
+},
+{
+  q: "A patient in septic shock suddenly develops cold, mottled extremities and decreasing urine output despite stable blood pressure. What does this indicate?",
+  options: [
+    { text: "Inadequate tissue perfusion", tag: "SCFHS" },
+    { text: "Effective resuscitation", tag: "NCLEX" },
+    { text: "Improving renal function", tag: "SAFE_DELAY" },
+    { text: "Normal compensatory response", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs indicate poor microcirculatory perfusion despite normal vital signs.",
+    distractors: {
+      NCLEX: "Perfusion is not adequate.",
+      SAFE_DELAY: "Urine output decline signals worsening status.",
+      STR: "This is not a normal response."
+    }
+  }
+},
+{
+  q: "A trauma patient receiving rapid blood transfusion suddenly develops dyspnea, crackles, and hypertension. What complication is MOST likely?",
+  options: [
+    { text: "Transfusion-associated circulatory overload (TACO)", tag: "SCFHS" },
+    { text: "Acute hemolytic reaction", tag: "NCLEX" },
+    { text: "Anaphylaxis", tag: "SAFE_DELAY" },
+    { text: "Septic transfusion reaction", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Rapid transfusion can precipitate volume overload causing pulmonary edema.",
+    distractors: {
+      NCLEX: "Hemolysis presents with fever and back pain.",
+      SAFE_DELAY: "Anaphylaxis includes hypotension and wheezing.",
+      STR: "Sepsis presents with fever and chills."
+    }
+  }
+},
+{
+  q: "A mechanically ventilated patient suddenly develops subcutaneous emphysema around the neck and chest. What is the PRIORITY concern?",
+  options: [
+    { text: "Air leak leading to pneumothorax", tag: "SCFHS" },
+    { text: "Allergic reaction to medication", tag: "NCLEX" },
+    { text: "Fluid imbalance", tag: "SAFE_DELAY" },
+    { text: "Infection at IV site", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Subcutaneous emphysema suggests air escaping into tissues, risking pneumothorax.",
+    distractors: {
+      NCLEX: "Allergy does not cause crepitus.",
+      SAFE_DELAY: "Fluid issues do not cause air under skin.",
+      STR: "IV infection is unrelated."
+    }
+  }
+},
+{
+  q: "During continuous renal replacement therapy (CRRT), the patient becomes hypotensive. What is the FIRST nursing action?",
+  options: [
+    { text: "Slow or stop ultrafiltration and assess volume status", tag: "SCFHS" },
+    { text: "Administer antihypertensive medication", tag: "NCLEX" },
+    { text: "Document the event and continue therapy", tag: "SAFE_DELAY" },
+    { text: "Change the dialysis filter", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypotension during CRRT is often due to excessive fluid removal requiring immediate adjustment.",
+    distractors: {
+      NCLEX: "Antihypertensives worsen hypotension.",
+      SAFE_DELAY: "Documentation must follow stabilization.",
+      STR: "Filter change does not address acute hypotension."
+    }
+  }
+},
+{
+  q: "A patient with multiple comorbidities is prescribed vancomycin 1g IV every 12 hours. Before the second dose, the nurse technician notes a trough level of 25 mcg/mL (therapeutic: 15–20). What is the PRIORITY action?",
+  options: [
+    { text: "Hold the dose and notify the nurse/physician", tag: "SCFHS" },
+    { text: "Administer the dose as scheduled", tag: "SAFE_DELAY" },
+    { text: "Document the level and continue therapy", tag: "NCLEX" },
+    { text: "Increase infusion rate to shorten administration time", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Supratherapeutic vancomycin levels risk nephrotoxicity and ototoxicity; holding and notifying is safe.",
+    distractors: {
+      SAFE_DELAY: "Administering risks toxicity.",
+      NCLEX: "Documentation alone does not prevent harm.",
+      STR: "Increasing rate worsens adverse effects."
+    }
+  }
+},
+{
+  q: "A patient on aminoglycoside therapy reports tinnitus and mild vertigo. What is the nurse technician’s FIRST action?",
+  options: [
+    { text: "Hold the dose and notify the nurse/physician", tag: "SCFHS" },
+    { text: "Document the symptoms and continue therapy", tag: "SAFE_DELAY" },
+    { text: "Administer antiemetics", tag: "NCLEX" },
+    { text: "Encourage hydration to reduce side effects", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Ototoxicity is a known adverse effect of aminoglycosides; prompt holding prevents progression.",
+    distractors: {
+      SAFE_DELAY: "Continuing therapy risks permanent damage.",
+      NCLEX: "Medications do not stop ototoxicity.",
+      STR: "Hydration does not prevent ototoxicity."
+    }
+  }
+},
+{
+  q: "A patient receiving IV potassium chloride 40 mEq over 1 hour complains of palpitations and tingling. ECG shows peaked T waves. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Stop the infusion immediately and notify the nurse/physician", tag: "SCFHS" },
+    { text: "Slow the infusion and monitor", tag: "SAFE_DELAY" },
+    { text: "Document the ECG changes", tag: "NCLEX" },
+    { text: "Administer IV calcium gluconate", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hyperkalemia with ECG changes is life-threatening; stopping infusion is the first action.",
+    distractors: {
+      SAFE_DELAY: "Slowing does not prevent arrhythmia.",
+      NCLEX: "Documentation alone is insufficient.",
+      STR: "Calcium may be ordered but first stabilize the situation."
+    }
+  }
+},
+{
+  q: "A patient with acute myocardial infarction develops sudden hypotension, distended neck veins, and muffled heart sounds. What is the MOST likely cause?",
+  options: [
+    { text: "Cardiac tamponade", tag: "SCFHS" },
+    { text: "Acute heart failure", tag: "NCLEX" },
+    { text: "Pulmonary embolism", tag: "SAFE_DELAY" },
+    { text: "Hypovolemic shock", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Beck’s triad indicates cardiac tamponade, which is life-threatening and requires immediate intervention.",
+    distractors: {
+      NCLEX: "HF presents differently and evolves gradually.",
+      SAFE_DELAY: "PE presents with sudden dyspnea and hypoxia.",
+      STR: "Hypovolemia does not usually present with muffled heart sounds."
+    }
+  }
+},
+{
+  q: "A patient with septic shock has MAP 55 mmHg on norepinephrine infusion. What is the nurse technician’s immediate action?",
+  options: [
+    { text: "Assess fluid status and prepare for additional IV fluids", tag: "SCFHS" },
+    { text: "Decrease norepinephrine rate", tag: "NCLEX" },
+    { text: "Document the MAP and continue", tag: "SAFE_DELAY" },
+    { text: "Obtain blood cultures", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "MAP <65 mmHg indicates inadequate perfusion; immediate fluid assessment is critical.",
+    distractors: {
+      NCLEX: "Reducing vasopressor worsens hypotension.",
+      SAFE_DELAY: "Documentation alone delays intervention.",
+      STR: "Cultures are important but secondary to hemodynamic support."
+    }
+  }
+},
+{
+  q: "A patient with massive trauma is bleeding profusely and has HR 140, BP 80/50. Which action is PRIORITY?",
+  options: [
+    { text: "Control hemorrhage and initiate IV fluids", tag: "SCFHS" },
+    { text: "Administer broad-spectrum antibiotics", tag: "NCLEX" },
+    { text: "Obtain consent for blood transfusion", tag: "SAFE_DELAY" },
+    { text: "Document vitals and notify family", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hemorrhage control and fluid resuscitation are life-saving and must precede other actions.",
+    distractors: {
+      NCLEX: "Antibiotics do not stop bleeding.",
+      SAFE_DELAY: "Consent delays critical intervention.",
+      STR: "Documentation and notification are secondary."
+    }
+  }
+},
+{
+  q: "During rapid sequence intubation, the patient becomes bradycardic and desaturated. What is the nurse technician’s immediate response?",
+  options: [
+    { text: "Stop the procedure, provide bag-mask ventilation, and notify physician", tag: "SCFHS" },
+    { text: "Continue intubation as planned", tag: "SAFE_DELAY" },
+    { text: "Administer sedative again", tag: "NCLEX" },
+    { text: "Document the event and reassess after intubation", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Bradycardia with hypoxia during intubation is life-threatening; immediate ventilation is required.",
+    distractors: {
+      SAFE_DELAY: "Continuing risks cardiac arrest.",
+      NCLEX: "Additional sedation worsens instability.",
+      STR: "Documentation cannot replace immediate intervention."
+    }
+  }
+},
+{
+  q: "A patient with ARDS on high PEEP shows sudden hypotension and decreased SpO₂. What should the nurse technician suspect FIRST?",
+  options: [
+    { text: "Tension pneumothorax", tag: "SCFHS" },
+    { text: "Pulmonary edema", tag: "NCLEX" },
+    { text: "Sepsis progression", tag: "SAFE_DELAY" },
+    { text: "Equipment malfunction", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "High PEEP increases risk of barotrauma leading to tension pneumothorax; immediate decompression may be required.",
+    distractors: {
+      NCLEX: "Pulmonary edema develops gradually, not suddenly.",
+      SAFE_DELAY: "Sepsis deterioration is slower.",
+      STR: "Equipment issues should be checked but patient safety is priority."
+    }
+  }
+},
+{
+  q: "A patient receiving vasopressin develops chest pain and marked hypertension. What is the immediate nursing action?",
+  options: [
+    { text: "Stop vasopressin infusion and notify physician", tag: "SCFHS" },
+    { text: "Administer nitroglycerin without notification", tag: "NCLEX" },
+    { text: "Document BP and continue infusion", tag: "SAFE_DELAY" },
+    { text: "Increase fluid rate", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Vasopressin can cause severe vasoconstriction; stopping prevents cardiac complications.",
+    distractors: {
+      NCLEX: "Intervention without notifying is unsafe.",
+      SAFE_DELAY: "Documentation alone risks harm.",
+      STR: "Fluid increase does not address hypertensive crisis."
+    }
+  }
+},
+{
+  q: "A patient post-cardiac surgery develops sudden hypotension, tachycardia, and cold extremities. CVP is low. Which intervention is PRIORITY?",
+  options: [
+    { text: "Rapid IV fluid bolus and reassess hemodynamics", tag: "SCFHS" },
+    { text: "Administer diuretics", tag: "NCLEX" },
+    { text: "Document findings and continue routine care", tag: "SAFE_DELAY" },
+    { text: "Call physiotherapy for mobilization", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Hypovolemic shock post-surgery requires immediate fluid resuscitation to restore perfusion.",
+    distractors: {
+      NCLEX: "Diuretics worsen hypotension.",
+      SAFE_DELAY: "Waiting delays life-saving intervention.",
+      STR: "Mobilization is unsafe in shock."
+    }
+  }
+},
+{
+  q: "A patient with massive GI bleeding is receiving multiple blood products. Which parameter should the nurse technician monitor MOST closely?",
+  options: [
+    { text: "Hemodynamic stability and urine output", tag: "SCFHS" },
+    { text: "Serum albumin", tag: "NCLEX" },
+    { text: "Electrolytes only", tag: "SAFE_DELAY" },
+    { text: "Patient comfort measures", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Vital signs and urine output indicate tissue perfusion and ongoing blood loss.",
+    distractors: {
+      NCLEX: "Albumin is secondary.",
+      SAFE_DELAY: "Electrolytes alone do not reflect acute instability.",
+      STR: "Comfort is important but not the immediate priority."
+    }
+  }
+},
+{
+  q: "A patient in the ER develops sudden anaphylaxis after IV contrast. What is the nurse technician’s FIRST action?",
+  options: [
+    { text: "Stop the infusion, call for help, and maintain airway", tag: "SCFHS" },
+    { text: "Administer antihistamine only", tag: "NCLEX" },
+    { text: "Document the event and monitor", tag: "SAFE_DELAY" },
+    { text: "Increase IV fluid without epinephrine", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway management and rapid emergency response are life-saving in anaphylaxis.",
+    distractors: {
+      NCLEX: "Antihistamines alone are insufficient.",
+      SAFE_DELAY: "Documentation delays treatment.",
+      STR: "Fluids without epinephrine do not address anaphylaxis."
+    }
+  }
+},
+{
+  q: "A patient with severe burns shows tachycardia, hypotension, and reduced urine output within the first 2 hours post-injury. What is PRIORITY?",
+  options: [
+    { text: "Aggressive fluid resuscitation per burn protocol", tag: "SCFHS" },
+    { text: "Administer analgesics", tag: "NCLEX" },
+    { text: "Document vitals", tag: "SAFE_DELAY" },
+    { text: "Start physical therapy", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Early hypovolemic shock is common in burns; fluids restore perfusion and prevent organ failure.",
+    distractors: {
+      NCLEX: "Pain management does not correct shock.",
+      SAFE_DELAY: "Documentation alone delays intervention.",
+      STR: "Therapy is unsafe in unstable patient."
+    }
+  }
+},
+{
+  q: "A patient with elevated intracranial pressure shows sudden bradycardia, irregular respirations, and hypertension. What is this TRIAD called and what is FIRST action?",
+  options: [
+    { text: "Cushing’s triad; immediate airway and notify physician", tag: "SCFHS" },
+    { text: "Sepsis triad; administer antibiotics", tag: "NCLEX" },
+    { text: "Shock triad; start IV fluids", tag: "SAFE_DELAY" },
+    { text: "Neuro triad; document findings", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Cushing’s triad indicates rising ICP; airway and rapid intervention are critical.",
+    distractors: {
+      NCLEX: "Sepsis triad is hypotension, fever, tachycardia.",
+      SAFE_DELAY: "Shock triad is hypotension, tachycardia, cold extremities.",
+      STR: "Documentation alone is insufficient."
+    }
+  }
+},
+{
+  q: "A patient post-thoracotomy develops sudden unilateral absent breath sounds and hypotension. What is the PRIORITY?",
+  options: [
+    { text: "Assess for tension pneumothorax and prepare for chest decompression", tag: "SCFHS" },
+    { text: "Increase supplemental oxygen", tag: "NCLEX" },
+    { text: "Document findings and notify physician later", tag: "SAFE_DELAY" },
+    { text: "Administer diuretics", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Tension pneumothorax is life-threatening and requires immediate decompression.",
+    distractors: {
+      NCLEX: "Oxygen alone does not treat tension pneumothorax.",
+      SAFE_DELAY: "Delayed notification risks death.",
+      STR: "Diuretics are inappropriate."
+    }
+  }
+},
+{
+  q: "A patient on multiple vasoactive infusions has sudden loss of radial pulse and cool extremities. What is the FIRST nursing action?",
+  options: [
+    { text: "Check infusion sites for extravasation and stop affected drugs", tag: "SCFHS" },
+    { text: "Increase vasopressor rate", tag: "NCLEX" },
+    { text: "Document perfusion status", tag: "SAFE_DELAY" },
+    { text: "Apply warming blankets", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Peripheral ischemia from extravasation can cause tissue necrosis; immediate action prevents permanent damage.",
+    distractors: {
+      NCLEX: "Increasing rate worsens ischemia.",
+      SAFE_DELAY: "Documentation does not protect tissue.",
+      STR: "Warming does not reverse extravasation."
+    }
+  }
+},
+{
+  q: "A post-cardiac surgery patient suddenly develops bright red drainage in chest tubes, hypotension, and tachycardia. What is PRIORITY?",
+  options: [
+    { text: "Assess for acute hemorrhage and notify physician immediately", tag: "SCFHS" },
+    { text: "Clamp chest tubes to stop bleeding", tag: "NCLEX" },
+    { text: "Document drainage and continue monitoring", tag: "SAFE_DELAY" },
+    { text: "Increase IV fluids without notifying physician", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Massive post-op bleeding is life-threatening; rapid assessment and escalation are critical.",
+    distractors: {
+      NCLEX: "Clamping tubes can cause tension and worsen cardiac output.",
+      SAFE_DELAY: "Documentation alone delays treatment.",
+      STR: "Fluids without escalation are insufficient."
+    }
+  }
+},
+{
+  q: "A patient in the ER after chemical exposure shows sudden respiratory distress, facial swelling, and stridor. What is the FIRST intervention?",
+  options: [
+    { text: "Establish airway immediately and call for rapid response", tag: "SCFHS" },
+    { text: "Administer IV corticosteroids only", tag: "NCLEX" },
+    { text: "Document incident and monitor vitals", tag: "SAFE_DELAY" },
+    { text: "Move patient to isolation room", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Airway compromise from chemical exposure is life-threatening; securing airway is priority.",
+    distractors: {
+      NCLEX: "Steroids alone do not prevent airway obstruction.",
+      SAFE_DELAY: "Monitoring alone risks death.",
+      STR: "Isolation is secondary to airway."
+    }
+  }
+},
+{
+  q: "A neonate in the NICU has labored breathing and cyanosis 5 minutes after birth. Oxygen saturation is 82%. What should the nurse technician do FIRST?",
+  options: [
+    { text: "Provide positive pressure ventilation immediately", tag: "SCFHS" },
+    { text: "Obtain arterial blood gas", tag: "NCLEX" },
+    { text: "Document oxygen saturation", tag: "SAFE_DELAY" },
+    { text: "Notify the neonatologist", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Immediate ventilation is life-saving in neonatal respiratory distress; assessment and documentation follow stabilization.",
+    distractors: {
+      NCLEX: "Diagnostics delay urgent intervention.",
+      SAFE_DELAY: "Documentation does not correct hypoxia.",
+      STR: "Notification without immediate action is unsafe."
+    }
+  }
+},
+{
+  q: "A 2-year-old child presents with sudden drooling, high fever, and inspiratory stridor. Which intervention is PRIORITY?",
+  options: [
+    { text: "Maintain airway and prepare for possible intubation", tag: "SCFHS" },
+    { text: "Administer oral antibiotics immediately", tag: "NCLEX" },
+    { text: "Document vital signs and monitor", tag: "SAFE_DELAY" },
+    { text: "Start IV fluids", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Signs suggest epiglottitis; airway maintenance is immediately life-saving.",
+    distractors: {
+      NCLEX: "Oral medications are unsafe in airway obstruction.",
+      SAFE_DELAY: "Observation delays critical intervention.",
+      STR: "IV fluids are supportive but secondary to airway."
+    }
+  }
+},
+{
+  q: "A postpartum patient shows heavy vaginal bleeding with hypotension and tachycardia. What is the nurse technician’s FIRST action?",
+  options: [
+    { text: "Massage the uterus and call for immediate help", tag: "SCFHS" },
+    { text: "Administer analgesics", tag: "NCLEX" },
+    { text: "Document blood loss and notify physician later", tag: "SAFE_DELAY" },
+    { text: "Encourage patient to ambulate", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Uterine massage addresses postpartum hemorrhage; rapid response is critical to prevent shock.",
+    distractors: {
+      NCLEX: "Analgesics do not stop bleeding.",
+      SAFE_DELAY: "Delaying intervention is life-threatening.",
+      STR: "Ambulation worsens hypotension."
+    }
+  }
+},
+{
+  q: "A 10-year-old patient with diabetic ketoacidosis (DKA) presents with altered mental status, Kussmaul respirations, and blood glucose 520 mg/dL. What is PRIORITY?",
+  options: [
+    { text: "Start IV fluid resuscitation and monitor electrolytes", tag: "SCFHS" },
+    { text: "Administer subcutaneous insulin",
+    { text: "Administer subcutaneous insulin", tag: "NCLEX" },
+    { text: "Allow oral fluids to rehydrate", tag: "SAFE_DELAY" },
+    { text: "Notify the pediatric endocrinologist", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Fluid resuscitation is the immediate priority in DKA to restore perfusion and prevent cerebral edema; insulin is started after initial fluids.",
+    distractors: {
+      NCLEX: "Subcutaneous insulin alone without fluids can worsen hypotension and shock.",
+      SAFE_DELAY: "Oral fluids are insufficient in severe DKA.",
+      STR: "Notification is important but should not delay immediate resuscitation."
+    }
+  }
+},
+{
+  q: "A 10-year-old patient with diabetic ketoacidosis (DKA) presents with altered mental status, Kussmaul respirations, and blood glucose 520 mg/dL. What is PRIORITY?",
+  options: [
+    { text: "Start IV fluid resuscitation and monitor electrolytes", tag: "SCFHS" },
+    { text: "Administer subcutaneous insulin",
+    { text: "Administer subcutaneous insulin", tag: "NCLEX" },
+    { text: "Allow oral fluids to rehydrate", tag: "SAFE_DELAY" },
+    { text: "Notify the pediatric endocrinologist", tag: "STR" }
+  ],
+  correctTag: "SCFHS",
+  rationale: {
+    correct: "Fluid resuscitation is the immediate priority in DKA to restore perfusion and prevent cerebral edema; insulin is started after initial fluids.",
+    distractors: {
+      NCLEX: "Subcutaneous insulin alone without fluids can worsen hypotension and shock.",
+      SAFE_DELAY: "Oral fluids are insufficient in severe DKA.",
+      STR: "Notification is important but should not delay immediate resuscitation."
+    }
+  }
 }
 ];
 
@@ -2070,7 +2576,7 @@ let selectedIndex = null;
 let score = { SCFHS:0, NCLEX:0, STR:0, SAFE_DELAY:0 };
 
 // ================= TIMER =================
-let totalTime = 20 * 60; // 20 minutes
+let totalTime = 120 * 60; // 120 minutes
 let timeLeft = totalTime;
 let timerInterval = null;
 
